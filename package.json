@@ -1,0 +1,38 @@
+{
+  "name": "typescript-official-guide",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.20.0",
+    "ts-loader": "^9.3.1",
+    "webpack-cli": "^4.10.0"
+  },
+  "description": "TypesScript Official Guide",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev src/index.ts",
+    "start": "webpack-dev-server --mode development --open --port=8081",
+    "tsc": "tsc",
+    "lint": "eslint . --ext .ts",
+    "lint-fix": "eslint . --ext .ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergio-espinoza/typescript-official-guide.git"
+  },
+  "author": "Sergio Espinoza Peralta <48479567.sjep@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergio-espinoza/typescript-official-guide/issues"
+  },
+  "homepage": "https://github.com/sergio-espinoza/typescript-official-guide#readme",
+  "dependencies": {
+    "typescript": "^4.7.4",
+    "webpack": "^5.74.0",
+    "webpack-dev-server": "^4.9.3"
+  }
+}

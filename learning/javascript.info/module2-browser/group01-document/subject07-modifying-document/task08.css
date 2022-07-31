@@ -1,0 +1,11 @@
+.clock__hours {
+  color: red;
+}
+
+.clock__minutes {
+  color: green;
+}
+
+.clock__seconds {
+  color: blue;
+}
