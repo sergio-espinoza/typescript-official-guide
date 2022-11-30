@@ -1,3 +1,5 @@
+import './style.css';
+
 // source: https://javascript.info/mousemove-mouseover-mouseout-mouseenter-mouseleave#smart-tooltip
 
 import { HoverIntent } from './hoverIntent';
@@ -28,3 +30,6 @@ new HoverIntent({
     tooltipEl?.remove();
   },
 });
+
+
+
