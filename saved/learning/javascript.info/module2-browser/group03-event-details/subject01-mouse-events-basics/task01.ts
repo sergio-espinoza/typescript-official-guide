@@ -1,5 +1,7 @@
 // source: https://javascript.info/mouse-events-basics#selectable-list
 
+export {};
+
 interface IExtendedWindow extends Window {
   ul?: HTMLUListElement;
 }

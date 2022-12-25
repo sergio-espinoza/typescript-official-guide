@@ -40,7 +40,10 @@ class HoverIntent {
   onMouseOver(event) {
     /* ... */
     this.isOver = true;
-    this.timeout = setTimeout(() => this.isOver && this.over(), this.interval);
+    this.timeoutId = setTimeout(
+      () => this.isOver && this.over(),
+      this.interval
+    );
   }
 
   onMouseOut(event) {
@@ -51,11 +54,15 @@ class HoverIntent {
       return;
     }
 
-    clearTimeout(this.timeout);
+    clearTimeout(this.timeoutId);
     this.out();
   }
 
   onMouseMove(event) {
+    // if (!this.isOver && event.timeStamp - this.currentNow < this.interval) {
+    //   return;
+    // }
+
     const { x = 0, y = 0, timeStamp = 1 } = event || {};
 
     this.differenceX = x - this.currentX;
